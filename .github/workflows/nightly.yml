@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  FULL_TAG: ghcr.io/Darlekesh/homergx:preview 
+  FULL_TAG: ghcr.io/darlekesh/homergx:preview 
 
 jobs:
   docker-image:
