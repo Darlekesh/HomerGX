@@ -7,7 +7,7 @@
           {{ item.subtitle }}
         </template>
         <template v-else-if="percentage">
-          {{ percentage }} blocked
+          {{ percentage }} requests blocked
         </template>
       </p>
     </template>
@@ -39,7 +39,7 @@ export default {
   computed: {
     percentage: function () {
       if (this.ads_percentage_today) {
-        return this.ads_percentage_today.toFixed(1);
+        return this.ads_percentage_today.toFixed();
       }
       return "";
     },

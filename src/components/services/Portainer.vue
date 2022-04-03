@@ -33,13 +33,13 @@ export default {
   computed: {
     onlinec: function () {
       if (this.online) {
-        return this.online.toFixed(1);
+        return this.online.toFixed();
       }
       return "";
     },
     offlinec: function () {
       if (this.offline) {
-        return this.offline.toFixed(1);
+        return this.offline.toFixed();
       }
       return "";
     },
