@@ -3,7 +3,7 @@ export default {
     proxy: Object,
   },
   created: function () {
-    // custom service often consume info from an API using the item link (url) as a base url,
+    // custom service often consume info from an API using the item link (url) as a base url, 
     // but sometimes the base url is different. An optional alternative URL can be provided with the "endpoint" key.
     this.endpoint = this.item.endpoint || this.item.url;
 
