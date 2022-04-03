@@ -7,7 +7,7 @@
           {{ item.subtitle }}
         </template>
         <template v-else-if="percentage">
-          {{ percentage }}&percnt; blocked
+          {{ percentage }} blocked
         </template>
       </p>
     </template>
@@ -52,7 +52,7 @@ export default {
       const result = await this.fetch("/api.php").catch((e) => console.log(e));
 
       this.status = result.status;
-      this.ads_percentage_today = result.ads_percentage_today;
+      this.ads_percentage_today = result.ads_blocked_today;
     },
   },
 };
